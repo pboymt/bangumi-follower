@@ -178,14 +178,14 @@ ab-bin (依赖所有)
 | 0 | `PROJECT_STAGE_0.md` | workspace 骨架 | 无 | Cargo.toml, README |
 | 1 | `PROJECT_STAGE_1.md` | ab-core | 无 | Config struct + checker + update |
 | 2 | `PROJECT_STAGE_2.md` | ab-database | ab-core | 数据表定义 + 迁移 + CRUD |
-| 3 | `PROJECT_STAGE_3.md` | ab-network, ab-parser | ab-core | HTTP 客户端 + 解析引擎 |
-| 4 | `PROJECT_STAGE_4.md` | ab-downloader | ab-network | qBittorrent/Aria2 客户端 |
-| 5 | `PROJECT_STAGE_5.md` | ab-rss, ab-notification, ab-searcher | ab-network, ab-parser, ab-database | RSS + 通知 + 搜索 |
-| 6 | `PROJECT_STAGE_6.md` | ab-manager | ab-database, ab-downloader, ab-rss | 业务编排 |
-| 7 | `PROJECT_STAGE_7.md` | ab-core-thread | ab-manager, ab-notification | 4 个后台循环 |
+| 3 | `PROJECT_STAGE_3.md` | ab-network | ab-core | HTTP 客户端 + RSS 解析 |
+| 4 | `PROJECT_STAGE_4.md` | ab-parser | ab-core | 解析引擎 |
+| 5 | `PROJECT_STAGE_5.md` | ab-downloader | ab-network | qBittorrent/Aria2 客户端 |
+| 6 | `PROJECT_STAGE_6.md` | ab-rss | ab-database, ab-network, ab-parser | RSS Engine + Feed Analysis |
+| 7 | `PROJECT_STAGE_7.md` | ab-manager | ab-database, ab-downloader, ab-rss | 业务编排 |
 | 8 | `PROJECT_STAGE_8.md` | ab-security, ab-api | ab-core, ab-database | Web API + JWT |
-| 9 | `PROJECT_STAGE_9.md` | ab-mcp | ab-manager, ab-api | MCP SSE 服务器 |
-| 10 | `PROJECT_STAGE_10.md` | ab-bin | 所有 | 二进制入口 |
+| 9 | `PROJECT_STAGE_9.md` | ab-notification, ab-searcher, ab-core-thread | ab-manager, ab-network, ab-parser | 通知 + 搜索 + 后台任务 |
+| 10 | `PROJECT_STAGE_10.md` | ab-mcp, ab-bin | ab-manager, ab-api | MCP + 二进制入口 |
 
 ---
 
