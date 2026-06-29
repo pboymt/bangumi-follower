@@ -1,0 +1,1 @@
+ALTER TABLE bangumi ADD COLUMN weekday_locked INTEGER DEFAULT 0;

@@ -1,0 +1,16 @@
+[package]
+name = "ab-database"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ab-core = { path = "../ab-core" }
+sqlx = { workspace = true, features = ["sqlite", "runtime-tokio-rustls", "chrono", "migrate"] }
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+chrono.workspace = true
+thiserror.workspace = true
+once_cell.workspace = true
+tokio = { workspace = true, features = ["rt"] }
+tracing.workspace = true
+sha2 = "0.10"
