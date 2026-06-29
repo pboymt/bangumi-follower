@@ -1,0 +1,16 @@
+[package]
+name = "ab-network"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ab-core = { path = "../ab-core" }
+reqwest = { workspace = true, features = ["json", "socks", "multipart"] }
+regex.workspace = true
+quick-xml.workspace = true
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+once_cell.workspace = true
+tokio = { workspace = true, features = ["time"] }
+tracing.workspace = true
+thiserror.workspace = true
